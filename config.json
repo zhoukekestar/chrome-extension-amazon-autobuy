@@ -1,0 +1,5 @@
+{
+  "getTask": "http://121.43.149.161:8080/amazon_system/system/tasklog?fid=",
+  "putTask": "http://121.43.149.161:8080/amazon_system/system/tasklog",
+  "debug": true
+}

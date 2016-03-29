@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>Autobuy</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 1em;
+	}
+	.autobuy-enabled {
+		height: 31px;
+		line-height: 31px;
+		border-top: solid 2px #ccc;
+		border-bottom: solid 2px #ccc;
+		padding: 10px 0;
+	}
+	.autobuy-enabled input{
+		float: right;
+	}
+	
+	.autobuy-current input[type='text'],
+	.form-fid input[type='text']{
+		display: block;
+		width: 100%;
+		height: 34px;
+		padding: 6px 12px;
+		font-size: 14px;
+		line-height: 1.42857143;
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+		-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		box-sizing: border-box;
+	}
+	.autobuy-current label{
+		margin-top: 1em;
+		display: block;
+	}
+	.btn-add,
+	.btn-notification-test, 
+	.btn-load-mission,
+	.btn-cookies-clear {
+		background-color: #4cd964;
+		border: none;
+		display: inline-block;
+		width: 150px;
+		height: 31px;
+		outline: none;
+		border-radius: 5px;
+		color: #fff;
+		margin: 10px auto;
+		cursor: pointer;
+	}
+	.btn-load-mission:disabled {
+		background-color: #ccc;
+	}
+	h3.list{
+		display: block;
+		height: auto;
+	}
+
+	.form-fid {
+		padding-right: 200px;
+		position: relative;
+	}
+	.form-fid button{
+		right: 0;
+		position: absolute;
+		display: block;
+		top: -10px;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	td {
+	  border: solid 1px #ccc;
+	}
+	</style>
+	
+	<link rel="stylesheet" type="text/css" href="switch.css" >
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<h1>配置页面</h1>
+	<h3>配置FID:</h3>
+	<form class="form-fid">
+		<input type="text" name="fid" value="" placeholder="fid [19]">
+		<button class="btn-load-mission">加载任务</button>
+	</form>
+	<h3 class="autobuy-enabled">是否开启自动刷单<input type="checkbox" class="uiswitch autobuy-enabled" name="autobuy-enabled" value="on"></h3>
+	<form class="autobuy-current">
+	<!-- 如需添加字段，
+	需要在options.html添加输入框
+	在options.js中添加var list = ["email", "passwd", "keywords"...后添加相关字段
+	在background.js 中添加d到dd的映射
+	 -->
+
+		<label>
+			ID
+			<input type="text" name="id" value="" placeholder="mission id [task-1]"></td>
+		</label>
+		<label>
+			Time
+			<input type="text" name="time" value="" placeholder="delay(ms) [5000]">
+		</label>
+		<label>
+			Email
+			<input type="text" name="email" value="" placeholder="email [kirkrkid@hotmail.com]">
+		</label>
+		<label>
+			passwor
+			<input type="text" name="passwd" value="" placeholder="password [qb841f3h]">
+		</label>
+		<label>
+			keywords
+			<input type="text" name="keywords" value="" placeholder="keywords [B004WL5REW]">
+		</label>
+		<label>
+			asin
+			<input type="text" name="asin" value="" placeholder="asin [B004WL5REW]">
+		</label>
+		<label>
+			price
+			<input type="text" name="price" value="" placeholder="price [47.54]">
+		</label>
+		<label>
+			name
+			<input type="text" name="name" value="" placeholder="user name [Vit Miska]">
+		</label>
+		<label>
+			address
+			<input type="text" name="address" value="" placeholder="address [7540 FULLERTON CT STE B]">
+		</label>
+		<label>
+			city
+			<input type="text" name="city" value="" placeholder="city [SPRINGFIELD]">
+		</label>
+		<label>
+			state
+			<input type="text" name="state" value="" placeholder="state [VA ]">
+		</label>
+		<label>
+			zip
+			<input type="text" name="zip" value="" placeholder="zip [22153-2829]">
+		</label>
+		<label>
+			phone
+			<input type="text" name="phone" value="" placeholder="phone number [(703) 550-7974]">
+		</label>
+		<label>
+			coupon
+			<input type="text" name="coupon" value="" placeholder="coupon [USARK76N]">
+		</label>
+		<label>
+			shoppingCard
+			<input type="text" name="shoppingCard" value="" placeholder="shoppingCard [J5AW-GFKFJX-C8JB]">
+		</label>
+
+		<label>
+			cardName
+			<input type="text" name="cardName" value="" placeholder="cardName [Bob]">
+		</label>
+		<label>
+			cardNumber
+			<input type="text" name="cardNumber" value="" placeholder="cardNumber [xxxx-xxxx-xxxx]">
+		</label>
+		<label>
+			cardMonth
+			<input type="text" name="cardMonth" value="" placeholder="cardMonth [1]">
+		</label>
+		<label>
+			cardYear
+			<input type="text" name="cardYear" value="" placeholder="cardYear [2015]">
+		</label>
+		<label>
+			cardCurrency
+			<input type="text" name="cardCurrency" value="" placeholder="cardCurrency [EUR]">
+		</label>
+
+		<label>
+			type
+			<input type="text" name="type" value="" placeholder="type [4]">
+		</label>
+		<label>
+			register?
+			<input type="checkbox" class="uiswitch" name="register">
+		</label>
+	</form>
+	<div style="text-align: center;">
+		<button class="btn-add">保存更改</button>
+		<button class="btn-notification-test">测试通知</button>
+		<button class="btn-cookies-clear">清除Cookie及历史</button>
+	</div>
+	<p>Logs on this computer.</p>
+	<h3 class="autobuy-enabled list log-list"></h3>
+	<script src="options.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,4 @@
+  "getTask": "http://47.88.1.228:8080/amazon_system/system/tasklog?fid=",
+  "putTask": "http://47.88.1.228:8080/amazon_system/system/tasklog"
+  "getTask": "http://121.43.149.161:8080/amazon_system/system/tasklog?fid=",
+  "putTask": "http://121.43.149.161:8080/amazon_system/system/tasklog"

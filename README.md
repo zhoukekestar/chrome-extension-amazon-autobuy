@@ -4,9 +4,13 @@
 * AutoChangeIP_20150513.Q 这个是给按键精灵用的脚本，主要用来操作代理软件，然后代理软件切换ip，为了防止刷单检测
 * [点击此处查看视频](https://zhoukekestar.github.io/chrome-extension-amazon-autobuy/index.html)
 
+![step-1](./images/step (1).png)
+
 ## autobuy视频截图（具体可看视频，为了压缩大小不是很清晰）
 * 配置参数
+
 ![step-1](./images/step (1).png)
+
 * 登陆
   ![step-2](./images/step (2).png)
 * 搜索指定商品

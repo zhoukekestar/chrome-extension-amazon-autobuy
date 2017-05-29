@@ -6,7 +6,7 @@
 
 ## autobuy视频截图（具体可看视频，为了压缩大小不是很清晰）
 * 配置参数
-  ![step-1](./images/step (1).png)
+![step-1](./images/step (1).png)
 * 登陆
   ![step-2](./images/step (2).png)
 * 搜索指定商品

@@ -1,6 +1,5 @@
 ## Amazon自动刷单插件
-* AutoChangeIP_20150513.Q 这个是给按键精灵用的脚本，主要用来操作代理软件，然后代理软件切换ip，为了防止刷单检测
-* 老版本视频：[查看视频](https://zhoukekestar.github.io/chrome-extension-amazon-autobuy/index.html)
+* V1版本视频：[查看视频](https://zhoukekestar.github.io/chrome-extension-amazon-autobuy/v1/index.html)
 * [以issue 1为要求](https://github.com/zhoukekestar/chrome-extension-amazon-autobuy/issues/1)的Demo版本[视频](http://pan.baidu.com/s/1o8Ncz7k)
 
 ## 注意事项
@@ -15,12 +14,12 @@
 * 使用ES6/ES7语法，简化异步输入关键词，优化项目结构和减少异步控制代码。
 
 
-## 老版本视频部分截图
+## V1版本视频部分截图
 
 | 配置参数 | 登陆 | 搜索指定商品 |
 | -- | -- | -- |
-| ![step-1](./images/step%20(1).png) | ![step-2](./images/step%20(2).png) | ![step-3](./images/step%20(3).png) |
+| ![step-1](./v1/images/step%20(1).png) | ![step-2](./v1/images/step%20(2).png) | ![step-3](./v1/images/step%20(3).png) |
 | 添加到购物车 | 填写收货地址 | 支付（礼品卡加信用卡） |
-| ![step-4](./images/step%20(4).png) | ![step-5](./images/step%20(5).png) | ![step-6](./images/step%20(6).png) |
+| ![step-4](./v1/images/step%20(4).png) | ![step-5](./v1/images/step%20(5).png) | ![step-6](./v1/images/step%20(6).png) |
 | 支付成功并保持id |
-| ![step-7](./images/step%20(7).png) |
+| ![step-7](./v1/images/step%20(7).png) |

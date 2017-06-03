@@ -1,0 +1,34 @@
+{  
+	"name": "Autobuy",  
+	"version": "0.0.1",  
+	"description": "Auto buy amazon's goods.",
+	"manifest_version": 2,
+	"icons": { "128": "AutoBuy.png" },
+	"browser_action": {  
+		"default_icon": "AutoBuy.png" ,
+		"default_title": "Autobuy"
+	},
+	"permissions": [
+		"http://*/",
+		"cookies",
+		"https://*/",
+		"bookmarks",
+		"tabs",
+		"unlimitedStorage",
+		"history",
+		"notifications"
+	],
+	"content_scripts": [
+		{
+			"matches": ["http://*.amazon.com/*", "https://*.amazon.com/*", "http://localhost:8080/*"],
+			"js": ["require.min.js", "jquery.js", "alertMsg.js", "main.js"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"web_accessible_resources":[
+		"jquery.min.map",
+		"config.json"
+	]
+}

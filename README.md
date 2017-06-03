@@ -13,7 +13,6 @@
 * 输入目标关键字前，可以先浏览网页给出的推荐关键字。
 * 使用ES6/ES7语法，简化异步输入关键词，优化项目结构和减少异步控制代码。
 
-
 ## V1版本视频部分截图
 
 | 配置参数 | 登陆 | 搜索指定商品 |
@@ -23,3 +22,11 @@
 | ![step-4](./v1/images/step%20(4).png) | ![step-5](./v1/images/step%20(5).png) | ![step-6](./v1/images/step%20(6).png) |
 | 支付成功并保持id |
 | ![step-7](./v1/images/step%20(7).png) |
+
+
+# V2 步骤
+| 打开设置页面 | 设置页面| 拖动Excel到配置页面 |
+| -- | -- | -- |
+| ![step-1](./v2/images/step%20(1).png) | ![step-2](./v2/images/step%20(2).png) | ![step-3](./v2/images/step%20(3).png) |
+| 显示并保存配置 | 开启刷单开关 | 登陆测试 |
+| ![step-4](./v2/images/step%20(4).png) | ![step-5](./v2/images/step%20(5).png) | ![demo.gif](./v2/images/demo.gif) |

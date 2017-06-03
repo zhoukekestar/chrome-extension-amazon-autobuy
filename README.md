@@ -24,9 +24,18 @@
 | ![step-7](./v1/images/step%20(7).png) |
 
 
-# V2 步骤
-| 打开设置页面 | 设置页面| 拖动Excel到配置页面 |
+# V2 
+优化点：
+* 采用Excel + 拖拽 配置，数据处理和配置更方便。
+* 采用ES6/ES7 特性，代码更简洁，维护更方便。
+* （可选）集成IP代理，无需额外的程序或插件，一个就搞定。
+
+右击图片打开，查看大图~
+
+| 打开设置页面 | 设置页面|
 | -- | -- | -- |
-| ![step-1](./v2/images/step%20(1).png) | ![step-2](./v2/images/step%20(2).png) | ![step-3](./v2/images/step%20(3).png) |
-| 显示并保存配置 | 开启刷单开关 | 登陆测试 |
-| ![step-4](./v2/images/step%20(4).png) | ![step-5](./v2/images/step%20(5).png) | ![demo.gif](./v2/images/demo.gif) |
+| ![step-1](./v2/images/step%20(1).png) | ![step-2](./v2/images/step%20(2).png) |
+| 拖动Excel到配置页面 | 显示并保存配置 |
+| ![step-3](./v2/images/step%20(3).png) |![step-4](./v2/images/step%20(4).png) |
+|  开启刷单开关 | 登陆测试 |
+|  ![step-5](./v2/images/step%20(5).png) | ![demo.gif](./v2/images/demo.gif) |

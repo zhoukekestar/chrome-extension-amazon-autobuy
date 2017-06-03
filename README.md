@@ -24,7 +24,7 @@
 | ![step-7](./v1/images/step%20(7).png) |
 
 
-# V2 
+# V2
 优化点：
 * 采用Excel + 拖拽 配置，数据处理和配置更方便。
 * 采用ES6/ES7 特性，代码更简洁，维护更方便。
@@ -33,7 +33,7 @@
 右击图片打开，查看大图~
 
 | 打开设置页面 | 设置页面|
-| -- | -- | -- |
+| -- | -- |
 | ![step-1](./v2/images/step%20(1).png) | ![step-2](./v2/images/step%20(2).png) |
 | 拖动Excel到配置页面 | 显示并保存配置 |
 | ![step-3](./v2/images/step%20(3).png) |![step-4](./v2/images/step%20(4).png) |
